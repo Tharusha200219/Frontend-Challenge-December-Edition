@@ -5,6 +5,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Winter Solstice Celebrations Around the World">
+    <meta name="keywords"
+        content="GSAP, Smooth Scroll, Web Animations, JavaScript, Scrolling Effects Frontend Challenge dev.to">
+    <meta name="author" content="Your Name">
+    <title>Winter Solstice Celebrations Around the World</title>
+    <link rel="icon" href="1.png" type="image/png">
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
@@ -84,7 +91,7 @@
         }
 
         #main-nav ul li a {
-            
+
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
@@ -251,22 +258,27 @@
         .black {
             color: black;
         }
+
         body.night-mode .black {
             color: #3FC060;
         }
 
-        .header-name{
+        .header-name {
             color: black;
         }
+
         body.night-mode .header-name {
             color: #3FC060;
         }
-        .item{
+
+        .item {
             color: black;
         }
+
         body.night-mode .item {
             color: #ffffff;
         }
+
         .left-section {
             width: 50%;
         }
@@ -312,14 +324,15 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-           
+
             /* Light background */
         }
 
         .snow-image {
             width: 80%;
         }
-        .globe-image{
+
+        .globe-image {
             width: 80%;
         }
 
@@ -590,7 +603,7 @@
         <nav id="footer-nav">
             <ul>
                 <li><a href="#main-header">Back to Top</a></li>
-                
+
             </ul>
         </nav>
     </footer>
@@ -605,23 +618,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/MotionPathPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
     <script>
         gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
 
-document.querySelectorAll('.scroll-link').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();  // Prevent default link behavior
-    const targetId = this.getAttribute('href'); // Get target section ID
-    
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: targetId,   // Scroll to the target section
-      ease: "power2.inOut"   // Smooth easing
-    });
-  });
-});
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+
+                gsap.to(window, {
+                    duration: 1,
+                    scrollTo: targetId,
+                    ease: "power2.inOut"
+                });
+            });
+        });
 
         var tl = gsap.timeline({
             scrollTrigger: {
@@ -694,7 +707,7 @@ document.querySelectorAll('.scroll-link').forEach(link => {
             scrub: true,
         });
 
-        // Trigger the confetti animation when the page loads
+
         window.onload = function () {
             startConfetti();
         };
@@ -707,25 +720,25 @@ document.querySelectorAll('.scroll-link').forEach(link => {
             for (let i = 0; i < numConfetti; i++) {
                 const confetti = document.createElement("div");
                 confetti.classList.add("confetti");
-                confetti.style.width = `${Math.random() * 10 + 5}px`;  // Random width
-                confetti.style.height = `${Math.random() * 10 + 5}px`; // Random height
+                confetti.style.width = `${Math.random() * 10 + 5}px`;
+                confetti.style.height = `${Math.random() * 10 + 5}px`;
                 confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                confetti.style.top = `${Math.random() * window.innerHeight}px`;   // Random vertical position
-                confetti.style.left = `${Math.random() * window.innerWidth}px`;  // Random horizontal position
+                confetti.style.top = `${Math.random() * window.innerHeight}px`;
+                confetti.style.left = `${Math.random() * window.innerWidth}px`;
 
                 container.appendChild(confetti);
 
-                // GSAP animation
+
                 gsap.to(confetti, {
-                    duration: Math.random() * 2 + 3,  // Random duration
-                    x: Math.random() * 800 - 400,  // Random horizontal movement
-                    y: window.innerHeight + 100,  // Make confetti fall below the screen
-                    rotation: Math.random() * 360,  // Random rotation
-                    scale: Math.random() * 0.5 + 0.5,  // Random scaling
-                    opacity: 0,  // Fade out during animation
+                    duration: Math.random() * 2 + 3,
+                    x: Math.random() * 800 - 400,
+                    y: window.innerHeight + 100,
+                    rotation: Math.random() * 360,
+                    scale: Math.random() * 0.5 + 0.5,
+                    opacity: 0,
                     ease: "power1.out",
-                    repeat: -1,  // Repeat animation for continuous effect
-                    delay: Math.random() * 1  // Random delay for different starts
+                    repeat: -1,
+                    delay: Math.random() * 1
                 });
             }
         }
@@ -736,11 +749,11 @@ document.querySelectorAll('.scroll-link').forEach(link => {
             const lightModeIcon = document.getElementById("light-mode-icon");
             const darkModeIcon = document.getElementById("dark-mode-icon");
 
-            // Toggle mode and icon visibility on click
+
             document.getElementById("toggle-icons").addEventListener("click", () => {
                 body.classList.toggle("night-mode");
 
-                // Toggle icon visibility
+
                 if (body.classList.contains("night-mode")) {
                     lightModeIcon.style.display = "none";
                     darkModeIcon.style.display = "block";
