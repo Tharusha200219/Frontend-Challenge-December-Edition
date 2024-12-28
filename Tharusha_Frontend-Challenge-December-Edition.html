@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <title>Winter Solstice Celebrations Around the World</title>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow-x: hidden;
+        }
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: white;
+            color: #333;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+
+        #main-header {
+            background: #3FC060;
+
+
+            background: rgba(63, 192, 96, 0.11);
+
+            /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+            backdrop-filter: blur(15.1px);
+            -webkit-backdrop-filter: blur(15.1px);
+            /* border: 1px solid rgba(63, 192, 96, 0.18); */
+
+            color: black;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            display: flex;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            gap: 40px;
+            justify-content: space-around;
+        }
+
+        #main-header h1 {
+            font-size: 20px;
+
+        }
+
+        #main-nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #toggle-button {
+            padding: 10px 15px;
+            background-color: #3FC060;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        #main-nav ul li a {
+            
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        #main-nav ul li a:hover {
+            color: #3FC060;
+        }
+
+
+        section {
+            padding: 100px 50px;
+            margin-top: 80px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #3FC060;
+            margin-bottom: 20px;
+
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        #main-footer {
+            background: #3FC060;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #main-footer ul {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        #main-footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        body.night-mode {
+            background-color: #000000;
+            color: #cccccc;
+        }
+
+        body.night-mode #main-header {
+            background: linear-gradient(to right, #1c1c1c, #444444);
+        }
+
+        body.night-mode h2 {
+            color: white;
+        }
+
+        body.night-mode a {
+            color: white;
+        }
+
+        body.night-mode a:hover {
+            color: #3FC060;
+        }
+
+        .first-section-text {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 300px;
+
+
+        }
+
+        .second-section-text {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 300px;
+            flex-direction: row-reverse;
+
+
+        }
+
+        .third-section-text {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+            flex-direction: column;
+
+
+
+
+        }
+
+        .third-section-text-outer {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 30px;
+            flex-direction: column;
+        }
+
+        .left-text {
+            width: 87%;
+        }
+
+        .right-text {
+            /* width: 40%; */
+        }
+
+        .left-text-third {
+            width: 50%;
+        }
+
+        .first-head {
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 40px;
+            color: #3FC060;
+        }
+
+        .second-head {
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 40px;
+            color: #3FC060;
+        }
+
+        .third-head {
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 40px;
+            color: #3FC060;
+        }
+
+        .fourth-head {
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 40px;
+            color: #3FC060;
+        }
+
+        .fifth-head {
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 40px;
+            color: #3FC060;
+        }
+
+        .conclusion-head {
+            font-family: "Roboto", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 40px;
+            color: #3FC060;
+        }
+
+        .black {
+            color: black;
+        }
+        body.night-mode .black {
+            color: #3FC060;
+        }
+
+        .header-name{
+            color: black;
+        }
+        body.night-mode .header-name {
+            color: #3FC060;
+        }
+        .item{
+            color: black;
+        }
+        body.night-mode .item {
+            color: #ffffff;
+        }
+        .left-section {
+            width: 50%;
+        }
+
+        .right-section {
+            width: 50%;
+        }
+
+        .fourth-section {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .conclusion {
+            text-align: center;
+        }
+
+        .earth-image {
+
+            position: absolute;
+
+            left: 37.9996%;
+            top: 13%;
+            transform: translateX(-50%);
+            /* Center horizontally */
+            width: 300px;
+            /* Width of the image */
+            height: auto;
+            /* Maintain aspect ratio */
+
+        }
+
+
+        .earth-image {
+            position: absolute;
+        }
+
+        .section-image-move {
+            width: 100%;
+            height: 100vh;
+            /* Full height section */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           
+            /* Light background */
+        }
+
+        .snow-image {
+            width: 80%;
+        }
+        .globe-image{
+            width: 80%;
+        }
+
+        .third-section-outer {
+            display: flex;
+            flex-direction: row;
+            gap: 38px;
+            align-items: center;
+        }
+
+        #confetti-container {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 99;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="main-header">
+        <h1 class="header-name">Celebrating the Winter Solstice</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a class="item" href="#introduction">Introduction</a></li>
+                <li><a class="item" href="#science">The Science</a></li>
+                <li><a class="item" href="#hemispheres">Solstice Across Hemispheres</a></li>
+                <li><a class="item" href="#celebrations">Global Celebrations</a></li>
+                <li><a class="item" href="#traditions">Solstice Traditions</a></li>
+                <li><a class="item" href="#conclusion">Conclusion</a></li>
+            </ul>
+        </nav>
+        <div id="toggle-icons" style="cursor: pointer; font-size: 24px;">
+            <i id="light-mode-icon" class="fa-solid fa-sun" style="color: #3FC060; display: block;"></i>
+            <i id="dark-mode-icon" class="fa-solid fa-moon" style="color: #3FC060; display: none;"></i>
+        </div>
+    </header>
+    <div id="section-image-move" class="section-image-move">
+        <img class="earth-image" id="earth-image" src="./1.png" alt="Earth">
+
+        <div class="first-section-outer">
+            <section id="introduction">
+                <div class="first-section-text">
+                    <div class="left-text">
+                        <h2 class="first-head"><span class="black">Introduction</span> to the Winter Solstice</h2>
+                    </div>
+
+                    <p class="text">The winter solstice is a significant astronomical event that marks the shortest day
+                        and
+                        the
+                        longest
+                        night of the year. It occurs annually in December in the Northern Hemisphere and in June in the
+                        Southern Hemisphere. This event has been observed and celebrated by cultures around the world
+                        for
+                        thousands of years, often symbolizing rebirth, reflection, and the triumph of light over
+                        darkness.
+                    </p>
+                </div>
+        </div>
+        </section>
+
+
+        <div class="second-section-outer">
+
+            <section id="science">
+                <div class="second-section-text">
+                    <div class="left-text">
+                        <h2 class="second-head"> <span class="black">The Science</span> Behind the Solstice</h2>
+                    </div>
+                    <div class="right-text">
+                        <p class="text">The solstices occur due to the Earth's axial tilt of approximately 23.5 degrees
+                            relative to its
+                            orbital plane
+                            around the Sun. This tilt causes different parts of the Earth to receive varying amounts of
+                            sunlight
+                            throughout the year, leading to the changing seasons. During the winter solstice, one
+                            hemisphere
+                            is tilted
+                            the farthest away from the Sun, resulting in the shortest period of daylight.</p>
+                        <p class="text">At the exact moment of the solstice, the Sun reaches its lowest maximum
+                            elevation in
+                            the sky. In
+                            the Northern
+                            Hemisphere, this happens around December 21st or 22nd, when the Sun is directly over the
+                            Tropic
+                            of Capricorn
+                            at 23.5 degrees south latitude. In the Southern Hemisphere, the winter solstice occurs
+                            around
+                            June 20th or
+                            21st, when the Sun is over the Tropic of Cancer at 23.5 degrees north latitude.</p>
+                        <p class="text">The solstice is a precise moment in time, but its effects are felt throughout
+                            the
+                            day. The term
+                            "solstice"
+                            comes from the Latin words "sol" (sun) and "sistere" (to stand still), because the Sun's
+                            apparent movement
+                            north or south comes to a stop before reversing direction.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <div class="third-section-outer">
+        <div class="left-section">
+            <section id="hemispheres">
+                <div class="third-section-text">
+                    <div class="third-section-text-outer">
+
+                        <h2 class="third-head"><span class="black">Solstice</span> Across Hemispheres</h2>
+
+
+                        <p class="text">The experience of the solstice differs greatly between the Northern and Southern
+                            Hemispheres due to
+                            their
+                            opposite seasons.</p>
+
+                    </div>
+
+                    <article class="hemisphere" id="northern-hemisphere">
+                        <div class="left-text">
+                            <h3>Northern Hemisphere</h3>
+                        </div>
+                        <div class="right-text">
+                            <p>In the Northern Hemisphere, the December solstice marks the beginning of winter.
+                                Countries like
+                                the
+                                United States, Canada, Russia, and much of Europe experience their shortest day and
+                                longest
+                                night.
+                                The
+                                weather typically becomes colder, and many cultures have developed traditions to bring
+                                light and
+                                warmth
+                                into this dark time of year.</p>
+                        </div>
+                    </article>
+                    <article class="hemisphere" id="southern-hemisphere">
+                        <div class="left-text">
+                            <h3>Southern Hemisphere</h3>
+                        </div>
+                        <div class="right-text">
+                            <p>Conversely, in the Southern Hemisphere, the December solstice signals the start of
+                                summer.
+                                Nations
+                                such
+                                as Australia, South Africa, and Argentina enjoy their longest day and shortest night.
+                                This time
+                                is
+                                associated with warmth, outdoor activities, and often, summer vacations.</p>
+                        </div>
+                    </article>
+                    <p>This opposite experience of the solstice underscores the diversity of cultural responses to the
+                        same
+                        astronomical event, influenced by local climate and historical traditions.</p>
+
+
+                </div>
+            </section>
+        </div>
+        <div class="right-section">
+            <img class="snow-image" id="snow-image" src="./2.png" alt="Earth">
+        </div>
+    </div>
+    <div id="confetti-container">
+        <section id="celebrations">
+            <div class="fourth-section">
+                <div class="left-section">
+                    <h2 class="fourth-head"> <span class="black">Global Celebrations</span> of the Winter Solstice</h2>
+
+                    <article class="celebration" id="newgrange">
+                        <h3>Newgrange - Ireland</h3>
+                        <p>The prehistoric monument of Newgrange is aligned with the rising sun on the winter solstice.
+                            Built
+                            over
+                            5,000 years ago, it predates Stonehenge and the Egyptian pyramids. Each year, a beam of
+                            sunlight
+                            illuminates the inner chamber, symbolizing the victory of light over darkness.</p>
+                    </article>
+
+                    <article class="celebration" id="intiraymi">
+                        <h3>Inti Raymi - Peru</h3>
+                        <p>Although traditionally held during the June solstice, which is the winter solstice in the
+                            Southern
+                            Hemisphere, Inti Raymi is an ancient Incan festival honoring the Sun god Inti. The
+                            celebration
+                            includes
+                            music, dancing, and sacrifices, reflecting the importance of the Sun in agricultural
+                            societies.
+                        </p>
+                    </article>
+
+                    <article class="celebration" id="modranicht">
+                        <h3>Modranicht - Anglo-Saxon Tradition</h3>
+                        <p>Meaning "Mother's Night," Modranicht was observed by the Anglo-Saxons on the eve of the
+                            winter
+                            solstice.
+                            It was a time to honor female deities and ancestral mothers, symbolizing fertility and the
+                            rebirth
+                            of
+                            the Sun.</p>
+                    </article>
+
+                    <article class="celebration" id="koliada">
+                        <h3>Koliada - Eastern Europe</h3>
+                        <p>Koliada is a Slavic festival celebrated during the winter solstice. Traditions include
+                            singing
+                            carols,
+                            feasting, and lighting fires to symbolize the return of the Sun. The festival has influenced
+                            modern
+                            Christmas and New Year traditions in the region.</p>
+                    </article>
+                </div>
+
+                <div class="right-section">
+                    <img class="globe-image" id="globe-image" src="./3.png" alt="Earth">
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="traditions">
+        <h2 class="fifth-head">Common Solstice <span class="black">Traditions</span> </h2>
+        <ul>
+            <li><strong>Bonfires and Candles:</strong> Lighting fires and candles is a widespread tradition to
+                represent
+                light overcoming darkness.</li>
+            <li><strong>Feasting:</strong> Communities gather to share meals, strengthening social bonds during the
+                cold
+                months.</li>
+            <li><strong>Gift-Giving:</strong> Exchanging gifts symbolizes goodwill and sharing abundance.</li>
+            <li><strong>Decorating with Evergreens:</strong> Using evergreen plants like holly and mistletoe
+                represents
+                eternal life and protection.</li>
+            <li><strong>Reflection and Renewal:</strong> The solstice is a time for introspection, setting
+                intentions
+                for the coming year.</li>
+        </ul>
+    </section>
+
+    <section id="conclusion">
+        <div class="conclusion">
+            <h2 class="conclusion-head"><span class="black">Concl</span>usion</h2>
+            <p>The winter solstice is a profound event that connects humanity across time and space. Despite differences
+                in
+                culture and climate, people around the world share common themes in their celebrations—hope, renewal,
+                and
+                the enduring human spirit. Understanding the science behind the solstice enhances our appreciation of
+                these
+                traditions and highlights our connection to the cosmos.</p>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <p>&copy; 2024 Winter Solstice Celebrations</p>
+        <nav id="footer-nav">
+            <ul>
+                <li><a href="#main-header">Back to Top</a></li>
+                
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+    <script>
+        gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
+
+
+document.querySelectorAll('.scroll-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();  // Prevent default link behavior
+    const targetId = this.getAttribute('href'); // Get target section ID
+    
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: targetId,   // Scroll to the target section
+      ease: "power2.inOut"   // Smooth easing
+    });
+  });
+});
+
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".section-image-move",
+                start: "top top",
+                end: "bottom top",
+                scrub: true,
+            }
+        });
+
+
+        tl.set("#earth-image", {
+            top: "10vh",
+
+            xPercent: -50,
+            scrub: true,
+        });
+
+        tl.to("#earth-image", {
+            motionPath: {
+                path: [
+                    { x: 0, y: 0 },
+                    { x: 300, y: 100 },
+                    { x: 600, y: 550 },
+                    { x: 900, y: 400 },
+                ],
+                curviness: 1.5,
+                autoRotate: true,
+                scrub: true,
+            },
+            scale: 0.2,
+            rotate: "300deg",
+            scrub: true,
+
+        });
+
+        const tl2 = gsap.timeline({
+            scrollTrigger: {
+                scrub: 1,
+                pin: true,
+                trigger: ".third-section-outer",
+                start: "50% 50%",
+                endTrigger: ".third-section-outer",
+                end: "bottom 50%",
+                scrub: true,
+            },
+        });
+
+        tl2.to("#snow-image", {
+            rotateZ: 600,
+            scale: 0.4,
+            scrub: true,
+        });
+
+        const tl3 = gsap.timeline({
+            scrollTrigger: {
+                scrub: 1,
+                pin: true,
+                trigger: "#confetti-container",
+                start: "50% 50%",
+                endTrigger: "#confetti-container",
+                end: "bottom 50%",
+                scrub: true,
+            },
+        });
+
+        tl3.to("#globe-image", {
+            rotateZ: 100,
+            scale: 0.4,
+            scrub: true,
+        });
+
+        // Trigger the confetti animation when the page loads
+        window.onload = function () {
+            startConfetti();
+        };
+
+        function startConfetti() {
+            const container = document.getElementById("confetti-container");
+            const colors = ["#ff6b81", "#f7c5cc", "#4d88a6", "#f1e6b7", "#ffeb3b"];
+            const numConfetti = 100;
+
+            for (let i = 0; i < numConfetti; i++) {
+                const confetti = document.createElement("div");
+                confetti.classList.add("confetti");
+                confetti.style.width = `${Math.random() * 10 + 5}px`;  // Random width
+                confetti.style.height = `${Math.random() * 10 + 5}px`; // Random height
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.top = `${Math.random() * window.innerHeight}px`;   // Random vertical position
+                confetti.style.left = `${Math.random() * window.innerWidth}px`;  // Random horizontal position
+
+                container.appendChild(confetti);
+
+                // GSAP animation
+                gsap.to(confetti, {
+                    duration: Math.random() * 2 + 3,  // Random duration
+                    x: Math.random() * 800 - 400,  // Random horizontal movement
+                    y: window.innerHeight + 100,  // Make confetti fall below the screen
+                    rotation: Math.random() * 360,  // Random rotation
+                    scale: Math.random() * 0.5 + 0.5,  // Random scaling
+                    opacity: 0,  // Fade out during animation
+                    ease: "power1.out",
+                    repeat: -1,  // Repeat animation for continuous effect
+                    delay: Math.random() * 1  // Random delay for different starts
+                });
+            }
+        }
+
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const body = document.body;
+            const lightModeIcon = document.getElementById("light-mode-icon");
+            const darkModeIcon = document.getElementById("dark-mode-icon");
+
+            // Toggle mode and icon visibility on click
+            document.getElementById("toggle-icons").addEventListener("click", () => {
+                body.classList.toggle("night-mode");
+
+                // Toggle icon visibility
+                if (body.classList.contains("night-mode")) {
+                    lightModeIcon.style.display = "none";
+                    darkModeIcon.style.display = "block";
+                } else {
+                    lightModeIcon.style.display = "block";
+                    darkModeIcon.style.display = "none";
+                }
+            });
+
+
+            const links = document.querySelectorAll("a[href^='#']");
+            links.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute("href").substring(1);
+                    const target = document.getElementById(targetId);
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 70,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+
+
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll("#main-nav a");
+
+            window.addEventListener("scroll", () => {
+                let current = "";
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (scrollY >= sectionTop - 200) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href").includes(current)) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
